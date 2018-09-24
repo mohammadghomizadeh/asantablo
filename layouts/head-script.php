@@ -1,4 +1,5 @@
-﻿<!DOCTYPE html>
+﻿<?php include('adminpanel/config/db.php');  ?>
+<!DOCTYPE html>
 <html  lang="fa-IR">
 <meta http-equiv="content-type" content="text/html;charset=utf-8" />
 <head id="Head">
@@ -10,6 +11,7 @@
 <meta id="MetaDescription" name="DESCRIPTION" content="شرکت ا می د." />
 <meta id="MetaKeywords" name="KEYWORDS" content="ایرتویا,i,limited,gs250,iiتی,لیفتراک,نماینده " />
 <meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" />
+
 <link href="_Content/stylesheet/app.css" type="text/css" rel="stylesheet"/>
 <link href="_Content/stylesheet/default.css" type="text/css" rel="stylesheet"/>
 <link href="_Content/stylesheet/portal.css" type="text/css" rel="stylesheet"/>

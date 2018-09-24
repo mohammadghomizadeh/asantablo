@@ -38,7 +38,16 @@
                                                     <div id="dnn_ctr481_ContentPane" class="contentpane"><!-- Start_Module_481 --><div id="dnn_ctr481_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                             <div id="dnn_ctr481_HtmlModule_lblContent" class="Normal">
                                                                 <div class="Branches_all accessories_title">
-                                                                    <h1>تاریخچه ایرتویا</h1>
+                                                                    <?php
+                                                                    $r = $db->select("content","`type` = 'aboutus'");
+                                                                    foreach($r as $row)
+                                                                    {
+                                                                    ?>
+                                                                    <h1><?php echo $row['title'];  ?>
+
+                                                                        <?php
+                                                                    };
+                                                                    ?>
                                                                 </div>
                                                             </div>
 
@@ -160,19 +169,13 @@
                                                     <div class="White">
                                                         <div id="dnn_ctr482_ContentPane" class="contentpane"><!-- Start_Module_482 --><div id="dnn_ctr482_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                                 <div id="dnn_ctr482_HtmlModule_lblContent" class="Normal">
-                                                                    <div class="garantee_tabs_content">
-                                                                        <h1>
-                                                                            تاریخچه ایرتویا <hr>
-                                                                        </h1>
-                                                                        شرکت ايرتويا در سال 1352 توسط شادروان اصغر حدادزاده با تفکر ورود فناوري و تکنولوژي روز دنيا به ايران،با اخذ نمايندگي مجاز وانحصاري تويوتا در ايران،در خيابان عباس آباد تهران تاسيس گرديد.پس از ورود 4 دستگاه خودروي تويوتا سيليکا در سال 1353 به عنوان نمونه،عملاً واردات خودروي تويوتا به ايران آغاز گرديد و سپس در سال 1356 انبار مرکزي شرکت به منظور استقرار خودروهاي وارداتي تويوتا در جاده دماوند شروع به کار کرد.
-                                                                        <br>
-                                                                        با توسعه فعاليت هاي بازرگاني ليفتراک و مونتاژ کاميون هاي تويوتا و نيز اقدامات اوليه در رابطه با فروش خودرو ،قطعات يدکي و خدمات پس از فروش ،اهداف اوليه شرکت محقق گرديد.همزمان با اين اقدامات ،شرکت در ايجاد نمايندگي هاي مجاز در سطح کشور اهتمام به عمل آورده و تلاش براي مطابقت وضعيت نمايندگي ها با استانداردها ي کمپاني تويوتا نيز صورت گرفت.
-                                                                        <br>
-                                                                        در خلال سالهاي 1355تا 1358سالانه حدود 40000دستگاه خودروي تويوتا به کشور وارد شد که بخش قابل توجهي از نيازمنديهاي عمومي جامعه را تامين کرد.عليرغم محدوديت واردات خودرو به کشور در طي سالهاي 1359 تا 1369،شرکت ايرتويا در امر واردات خودرو جهت تامين قطعات يدکي خودروهاي موجود در کشور فعاليت نمود و همزمان با آموزش پرسنل ،شبکه خدمات بعد از فروش گسترش يافت.
-                                                                        <br>
-                                                                        طي سالهاي 1370تا 1374با آزاد شدن واردات خودرو به کشور و اقدامات شرکت در جهت انجام اين مهم ،دگر بار رونقي مضاعف در امر واردات خودرو در کشور پديدار شد. به لحاظ منوط شدن واردات خودرو و به ثبت سفارش و به تبع آن عدم امکان ورود خودرو به کشور در سال 1374،مجدداً فعاليت ايرتويا به تامين درخواست هاي مناطق آزاد و سفارتخانه هاي خارجي در ايران و همچنين تامين نياز هاي عمومي و موسسات در بخش تجهيزات صنعتي(شامل ليفتراک،ريچتراک و يدک کش)و نيز قطعات يدکي(اصلي)محدود شد.با صدور مجوز صنفي براي امکان واردات مجدد خودرو در سال 1383،بار ديگر شرايط براي واردات صنعتي خودروي تويوتا توسط شرکت اير تويا به کشور فراهم گرديد که با استقبال وافر مصرف کنندگان و مشتريان وفادار و هميشگي تويوتا همراه شد که همچنان نيز ادامه دارد.
-                                                                        <br>
-                                                                    </div>
+                                                                    <?php
+                                                                    $result = $db->select("content","`type` = 'aboutus'");
+                                                                    foreach($result as $rows){
+                                                                        echo $rows['description'];
+                                                                    };
+
+                                                                    ?>
                                                                 </div>
 
                                                             </div><!-- End_Module_482 --></div>
@@ -414,7 +417,9 @@
                                         <div class="span3">
                                             <div id="dnn_FootPaneD" class="FootPaneD"><div class="DnnModule DnnModule-DNN_HTML DnnModule-867"><a name="867"></a>
                                                     <div class="White">
-                                                        <div id="dnn_ctr867_ContentPane" class="contentpane"><!-- Start_Module_867 --><div id="dnn_ctr867_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
+                                                        <div id="dnn_ctr867_ContentPane" class="contentpane">
+                                                            <!-- Start_Module_867 -->
+                                                            <div id="dnn_ctr867_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                                 <div id="dnn_ctr867_HtmlModule_lblContent" class="Normal">
                                                                     <div class="footer-links">
                                                                         <div class="footer-links-col">
