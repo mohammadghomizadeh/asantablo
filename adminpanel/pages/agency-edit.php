@@ -52,14 +52,18 @@ foreach($result as $rowagency){
              </div>
              <div class="form-group">
                   <label>نوع عاملیت </label><br>
-                  <input type="checkbox"name="agencytype_agency" id="agencytype_agency" value="Bike">عاملیت<br>
-                  <input type="checkbox" name="agencyBranch" id="agencyBranch" value="Bike">شعبه<br>
+                  <select>
+                    <option value="<?php echo $rowagency['type_agency']; ?>">عاملیت</option>
+                     <option value="<?php echo $rowagency['type_agency']; ?>">شعبه</option>
+                  </select> 
              </div>
              <div class="form-group">
                   <label>نوع خدمات </label><br>
-                  <input type="checkbox" name="agencySale" id="agencySale" value="Bike">فروش<br>
-                  <input type="checkbox" name="agencysales_service" id="agencysales_service" value="Bike">خدمات پس از فروش<br>
-                  <input type="checkbox" name="agencyParts" id="agencyParts" value="Bike">قطعات<br>
+                  <select>
+                    <option value="<?php echo $rowagency['type_service']; ?>">فروش</option>
+                     <option value="<?php echo $rowagency['type_service']; ?>">خدمات پس از فروش</option>
+                     <option value="<?php echo $rowagency['type_service']; ?>">قطعات</option>
+                  </select> 
              </div>
                 
               <div class="form-group">
@@ -106,50 +110,7 @@ foreach($result as $rowagency){
                              
                         </script>
                 </div>
-                <div class="form-group">
-
-            <label for="agencyimage">تصاویر گالری</label>
-            <input type="file"  name="agencyimage" id="agencyimage"  value="<?php echo $rowagency['gallery']; ?>" >
-              <p id="error1" style="display:none; color:#FF0000;">
-                Invalid Image Format! Image Format Must Be JPG, JPEG, PNG or GIF.
-              </p>
-              <p id="error2" style="display:none; color:#FF0000;">
-                    Maximum File Size Limit is 1MB.
-                    </p>
-            <script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
-
-             <script>
-              $('input[type="submit"]').prop("disabled", true);
-              var a=0;
-              //binds to onchange event of your input field
-              $('#agencyimage').bind('change', function() {
-              if ($('input:submit').attr('disabled',false)){
-                $('input:submit').attr('disabled',true);
-                }
-              var ext = $('#agencyimage').val().split('.').pop().toLowerCase();
-              if ($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
-                $('#error1').slideDown("slow");
-                $('#error2').slideUp("slow");
-                a=0;
-                }else{
-                var picsize = (this.files[0].size);
-                if (picsize > 1000000){
-                $('#error2').slideDown("slow");
-                a=0;
-                }else{
-                a=1;
-                $('#error2').slideUp("slow");
-                }
-                $('#error1').slideUp("slow");
-                if (a==1){
-                  $('input:submit').attr('disabled',false);
-                  }
-              }
-              });
-           
-          </script>
-<p class="help-block">تصاویر با کیفیت خوب و حجم پایین بارگذاری شود.باتشکر</p>
-</div>
+               
 <div class="form-group">
                 <input class="btn bg-olive btn-flat margin" type="submit" value="ارسال عاملیت"> 
               </div>
