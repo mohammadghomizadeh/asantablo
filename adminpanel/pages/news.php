@@ -2,15 +2,15 @@
 $action = $_GET['action'];
 
 if($action == "new"){?>
-                        <!--New-Service-Script-->
+                        <!--New-news-Script-->
                         <div class="box-header with-border">
                             <h3 class="box-title">افزودن مطلب جدید</h3>
                         </div>
                         <hr>
-                        <form method="POST" action="index.php?page=services-new" enctype="multipart/form-data">
+                        <form method="POST" action="index.php?page=news-new" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>عنوان مطلب</label>
-                                            <input type="text" class="form-control" placeholder="متن" name="servicetitle" id="servicetitle">
+                                            <input type="text" class="form-control" placeholder="متن" name="newstitle" id="newstitle">
                                         </div>
                                         <div class="form-group">
                                             <label>متن</label>
@@ -20,9 +20,9 @@ if($action == "new"){?>
                                         </div>
                                         <div class="form-group">
 
-                                            <label for="serviceicon">بارگزاری آیکون</label>
+                                            <label for="newsicon">بارگزاری آیکون</label>
 
-                                            <input type="file"  name="serviceicon" id="serviceicon" required >
+                                            <input type="file"  name="newsicon" id="newsicon" required >
                                             <p id="error1" style="display:none; color:#FF0000;">
                                             Invalid Image Format! Image Format Must Be JPG, JPEG, PNG or GIF.
                                             </p>
@@ -39,11 +39,11 @@ if($action == "new"){?>
                                                         $('input[type="submit"]').prop("disabled", true);
                                                         var a=0;
                                                         //binds to onchange event of your input field
-                                                        $('#serviceicon').bind('change', function() {
+                                                        $('#newsicon').bind('change', function() {
                                                         if ($('input:submit').attr('disabled',false)){
                                                             $('input:submit').attr('disabled',true);
                                                             }
-                                                        var ext = $('#serviceicon').val().split('.').pop().toLowerCase();
+                                                        var ext = $('#newsicon').val().split('.').pop().toLowerCase();
                                                         if ($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
                                                             $('#error1').slideDown("slow");
                                                             $('#error2').slideUp("slow");
@@ -73,9 +73,9 @@ if($action == "new"){?>
 
                         </form>
 <?php
-//End-Service-New Service
+//End--New news
 }elseif($action == "list"){?>
-<!--Start-List-Service-Block-->
+<!--Start-List-news-Block-->
 
 
                 <div class="box">
@@ -108,7 +108,7 @@ if($action == "new"){?>
                     <?php
                     include('config/db.php');
                     
-                    $results = $db->select("content","type = 'services'");
+                    $results = $db->select("content","type = 'news'");
                     $i = 1;
                     foreach($results as $row)
                     {
@@ -117,7 +117,7 @@ if($action == "new"){?>
 
                     <tr>
                     <td><?php echo $i; ?></td>
-                    <td><img src="uploads/services/<?php echo $row['image'];  ?>" width="20" height="20"/></td>
+                    <td><img src="uploads/news/<?php echo $row['image'];  ?>" width="20" height="20"/></td>
                     <td><?php echo $row['title']; ?></td>
                     <td><?php echo $row['create_at']; ?></td>
                     <td><span class="label label-success"><?php echo $row['status']; ?></span></td>
@@ -125,8 +125,8 @@ if($action == "new"){?>
                     <td>
                     
                     <div class="btn-group">
-                        <button onclick="location.href = 'index.php?page=services-delete&id=<?php echo $row['id'];  ?>'"  type="button" class="btn btn-default btn-danger"><i class="fa fa-fw fa-remove" ></i></button>
-                        <button onclick="location.href = 'index.php?page=services-edit&id=<?php echo $row['id'];  ?>'" type="button" class="btn btn-default btn-success" ><i class="fa fa-edit"></i></button>
+                        <button onclick="location.href = 'index.php?page=news-delete&id=<?php echo $row['id'];  ?>'"  type="button" class="btn btn-default btn-danger"><i class="fa fa-fw fa-remove" ></i></button>
+                        <button onclick="location.href = 'index.php?page=news-edit&id=<?php echo $row['id'];  ?>'" type="button" class="btn btn-default btn-success" ><i class="fa fa-edit"></i></button>
                         <!--Start-Modal-Edit-->
 
                 <!--End-Modal-Edit-->
@@ -144,7 +144,7 @@ if($action == "new"){?>
                 </div>
                 <!-- /.box-body -->
                 </div>
-<!--End-Service-Part-List-->
+<!--End-news-Part-List-->
 <?php
 }
 elseif($action == "other")
@@ -152,7 +152,7 @@ elseif($action == "other")
 
 ?>
 
-                        <form method="POST" action="index.php?page=service-other" enctype="multipart/form-data">
+                        <form method="POST" action="index.php?page=news-other" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>درصد خدمات کاری</label>
                                         </div>
@@ -181,11 +181,11 @@ elseif($action == "other")
                                         <hr>
                                         <?php
                              
-                              $result = $db->select("content","type = 'service'");
+                              $result = $db->select("content","type = 'news'");
                              foreach($result as $row)
                              {
                                  ?>  
-                        <form method="POST" action="index.php?page=service-other&id=<?php echo $row['id'];  ?>">
+                        <form method="POST" action="index.php?page=news-other&id=<?php echo $row['id'];  ?>">
                 
                                         
                                         <div class="form-group">
@@ -193,7 +193,7 @@ elseif($action == "other")
                                         </div>
                                         <div class="form-group">
                                             <label>عنوان </label>
-                                            <input type="text" class="form-control"  name="servicetitle" id="servicetitle" value="<?php echo $row['title'];  ?>">
+                                            <input type="text" class="form-control"  name="newstitle" id="newstitle" value="<?php echo $row['title'];  ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>متن</label>

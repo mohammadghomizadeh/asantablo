@@ -8,34 +8,34 @@ if(isset($_GET['action']))
         
         include('config/db.php');
         $update = $date->date("Y-m-d", false, false);
-        $servicetitle = $_POST['servicetitle'];
-        $servicedescription = $_POST['editor1'];
-        $serviceimg = $_FILES['serviceicon']['name'];
-        if(!empty($serviceimg))
+        $newstitle = $_POST['newstitle'];
+        $newsdescription = $_POST['editor1'];
+        $newsimg = $_FILES['newsicon']['name'];
+        if(!empty($newsimg))
         {
-            $uploaddir = 'uploads/services/';
-            $uploadfile = $uploaddir . basename($_FILES['serviceicon']['name']);
-            move_uploaded_file($_FILES['serviceicon']['tmp_name'], $uploadfile);
+            $uploaddir = 'uploads/news/';
+            $uploadfile = $uploaddir . basename($_FILES['newsicon']['name']);
+            move_uploaded_file($_FILES['newsicon']['tmp_name'], $uploadfile);
             $r = $db->run("UPDATE `content` SET 
-             `image` = '$serviceimg' ,`title`=' $servicetitle'
-            ,`description` = '$servicedescription' ,
+             `image` = '$newsimg' ,`title`=' $newstitle'
+            ,`description` = '$newsdescription' ,
             `update_at` = '$update'
               WHERE `id` = '$sid'");
                       ?>
                       <script>
-                      window.location.replace("index.php?page=services&action=list");
+                      window.location.replace("index.php?page=news&action=list");
                       </script>
                   <?php
          }else
          {
             $r = $db->run("UPDATE `content` SET 
-            `title`=' $servicetitle',
-           `description` = '$servicedescription',
+            `title`=' $newstitle',
+           `description` = '$newsdescription',
            `update_at` = '$update'
              WHERE `id` = '$sid'");
                       ?>
                       <script>
-                      window.location.replace("index.php?page=services&action=list");
+                      window.location.replace("index.php?page=news&action=list");
                       </script>
                   <?php
          }
@@ -47,15 +47,15 @@ if(isset($_GET['id'])){
     $result = $db->select("content"," `id` = $id");
     foreach($result as $row){
 ?>
-  <!--edit-Service-Script-->
+  <!--edit-news-Script-->
   <div class="box-header with-border">
                             <h3 class="box-title">ویرایش عنوان خدمات </h3>
                         </div>
                         <hr>
-                        <form method="POST" action="index.php?page=services-edit&action=save&sid=<?php echo $row['id']; ?>" enctype="multipart/form-data">
+                        <form method="POST" action="index.php?page=news-edit&action=save&sid=<?php echo $row['id']; ?>" enctype="multipart/form-data">
                                         <div class="form-group">
                                             <label>عنوان مطلب</label>
-                                            <input type="text" class="form-control" placeholder="متن" name="servicetitle" id="servicetitle" value="<?php echo $row['title']; ?>">
+                                            <input type="text" class="form-control" placeholder="متن" name="newstitle" id="newstitle" value="<?php echo $row['title']; ?>">
                                         </div>
                                         <div class="form-group">
                                             <label>متن</label>
@@ -65,10 +65,10 @@ if(isset($_GET['id'])){
                                         </div>
                                         <div class="form-group">
 
-                                            <label for="serviceicon">بارگزاری آیکون</label>
+                                            <label for="newsicon">بارگزاری آیکون</label>
 
-                                            <input type="file"  name="serviceicon" id="serviceicon"  >
-                                            <img src="uploads/services/<?php echo $row['image']; ?>" alt="" width="100" height="100">
+                                            <input type="file"  name="newsicon" id="newsicon"  >
+                                            <img src="uploads/news/<?php echo $row['image']; ?>" alt="" width="100" height="100">
                                             <p id="error1" style="display:none; color:#FF0000;">
                                             Invalid Image Format! Image Format Must Be JPG, JPEG, PNG or GIF.
                                             </p>
@@ -85,11 +85,11 @@ if(isset($_GET['id'])){
                                                         $('input[type="submit"]').prop("disabled", true);
                                                         var a=0;
                                                         //binds to onchange event of your input field
-                                                        $('#serviceicon').bind('change', function() {
+                                                        $('#newsicon').bind('change', function() {
                                                         if ($('input:submit').attr('disabled',false)){
                                                             $('input:submit').attr('disabled',true);
                                                             }
-                                                        var ext = $('#serviceicon').val().split('.').pop().toLowerCase();
+                                                        var ext = $('#newsicon').val().split('.').pop().toLowerCase();
                                                         if ($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
                                                             $('#error1').slideDown("slow");
                                                             $('#error2').slideUp("slow");

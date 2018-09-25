@@ -8,7 +8,7 @@ if(isset($_GET['id'])){
     {
         ?>
         <script>
-        window.location.replace("index.php?page=services&action=list");
+        window.location.replace("index.php?page=news&action=list");
         </script>
         <?php
     }else
@@ -21,7 +21,7 @@ if(isset($_GET['id'])){
 {
     ?>
     <script>
-    window.location.replace("index.php?page=services&action=list");
+    window.location.replace("index.php?page=news&action=list");
     </script>
     <?php
 }

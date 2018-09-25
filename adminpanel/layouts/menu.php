@@ -131,8 +131,8 @@
                             </span>
                         </a>
                         <ul class="treeview-menu">
-                            <li><a href="index.php?page=services&action=new"><i class="fa fa-circle-o"></i>اخبار جدید</a></li>
-                            <li><a href="index.php?page=services&action=list"><i class="fa fa-circle-o"></i>لیست اخبار</a></li>
+                            <li><a href="index.php?page=news&action=new"><i class="fa fa-circle-o"></i>اخبار جدید</a></li>
+                            <li><a href="index.php?page=news&action=list"><i class="fa fa-circle-o"></i>لیست اخبار</a></li>
                             <li><a href="index.php?page=cat_news&action=new"><i class="fa fa-circle-o"></i>افزودن دسته خبر   </a></li>
                             <li><a href="index.php?page=cat_news&action=list"><i class="fa fa-circle-o"></i>دسته بندی اخبار </a></li>
                        </ul>

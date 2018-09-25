@@ -37,7 +37,7 @@
                                                 <div id="dnn_ctr596_ContentPane" class="contentpane"><!-- Start_Module_596 --><div id="dnn_ctr596_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                         <div id="dnn_ctr596_HtmlModule_lblContent" class="Normal">
                                                             <div class="Branches_all accessories_title">
-                                                                <h1>مقالات آموزشی</h1>
+                                                                <h1>اخبار و اطلاعیه های سایت </h1>
                                                             </div>
                                                         </div>
 
@@ -173,7 +173,7 @@
                                                                     <div class="artc-template">
                                                                         <div class="artc-img">
                                                                             <a href="news-single.php?id=<?php echo $rows['id']; ?>">
-                                                                                <img height="200" width="260" src="adminpanel/uploads/news/<?php echo $rows['image']; ?>"
+                                                                                <img height="200" width="260" src="adminpanel/uploads/articles/<?php echo $rows['image']; ?>"
                                                                                      alt="<?php echo $rows['title']; ?>"></a>
                                                                         </div>
 
@@ -188,21 +188,21 @@
                                                                                         وارانتی</a></div>
                                                                                 <div class="article_news_Details">
                                                                                     <a rel="tooltip"
-                                                                                       href=""
+                                                                                       href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/articleType/AuthorView/authorID/798"
                                                                                        class="category-link"
                                                                                        data-original-title=" گارانتی و وارانتی"><img
                                                                                                 alt=""
-                                                                                                src="_Content_images/icons/Yelp-icon.png"></a>
+                                                                                                src="/portals/0/Images/icons/Yelp-icon.png"></a>
                                                                                     <a rel="tooltip"
                                                                                        href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/ID/287/جدول-سرویس-دوره-ای-خودروهای-هیبرید#Comments"
                                                                                        data-original-title="نظرات (8)"><img
                                                                                                 alt=""
-                                                                                                src="_Content_images/Icons/comment-icon-news.png"></a>
+                                                                                                src="/Portals/0/images/Icons/comment-icon-news.png"></a>
                                                                                     <a rel="tooltip"
                                                                                        href="article-single.php?id=<?php echo $rows['id']; ?>"
                                                                                        data-original-title="ارسال به دوستان"><img
                                                                                                 alt=""
-                                                                                                src="_Content_images/Icons/send-news-icon.png"></a>
+                                                                                                src="/Portals/0/images/Icons/send-news-icon.png"></a>
                                                                                 </div>
                                                                                 <div class="arct-vd">
                                                                                     <a href="article-single.php?id=<?php echo $rows['id']; ?>">مشاهده
