@@ -11,7 +11,7 @@
 <meta id="MetaDescription" name="DESCRIPTION" content="شرکت ا می د." />
 <meta id="MetaKeywords" name="KEYWORDS" content="ایرتویا,i,limited,gs250,iiتی,لیفتراک,نماینده " />
 <meta id="MetaRobots" name="ROBOTS" content="INDEX, FOLLOW" />
-
+    <link href="_Content/stylesheet/css.css" type="text/css" rel="stylesheet"/>
 <link href="_Content/stylesheet/app.css" type="text/css" rel="stylesheet"/>
 <link href="_Content/stylesheet/default.css" type="text/css" rel="stylesheet"/>
 <link href="_Content/stylesheet/portal.css" type="text/css" rel="stylesheet"/>
