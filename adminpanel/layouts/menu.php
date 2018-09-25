@@ -70,6 +70,20 @@
                     <li class="treeview">
                         <a href="#">
                             <i class="fa fa-th"></i>
+                            <span>فنی و گارانتی</span>
+                            <span class="pull-left-container">
+              <span class="label  pull-left bg-green ">4</span>
+                            </span>
+                        </a>
+                        <ul class="treeview-menu">
+                            <li><a href="index.php?page=garanty-edit"><i class="fa fa-circle-o"></i>  گارانتی </a></li>
+                            <li><a href="index.php?page=fanni-edit"><i class="fa fa-circle-o"></i>فنی </a></li>
+                            
+                        </ul>
+                    </li>
+                    <li class="treeview">
+                        <a href="#">
+                            <i class="fa fa-th"></i>
                             <span> شعبه ها</span>
                             <span class="pull-left-container">
               <span class="label  pull-left bg-green ">4</span>
@@ -164,7 +178,7 @@
                             <li><a href="index.php?page=setting&action=setting"><i class="fa fa-circle-o"></i>تنظیمات سایت </a></li>
                             <li><a href="index.php?page=slideshow&action=list"><i class="fa fa-circle-o"></i>اسلایدشو اصلی</a></li>
                             <li><a href="index.php?page=setting&action=social"><i class="fa fa-circle-o"></i>شبکه های اجتماعی</a></li>
-                            <li><a href="index.php?page=setting&action=aboutus"><i class="fa fa-circle-o"></i>درباره ما</a></li>
+                            <li><a href="index.php?page=about-edit"><i class="fa fa-circle-o"></i>درباره ما</a></li>
                             <li><a href="index.php?page=setting&action=contactus"><i class="fa fa-circle-o"></i>تماس با ما</a></li>
                        </ul>
                     </li>

@@ -5,16 +5,16 @@
                     include('config/db.php');
             
                         $art_id = $_GET['id'];
-                        $arttitle = $_POST['garantytitle'];
+                        $arttitle = $_POST['abouttitle'];
                         $artdescript = $_POST['editor1'];
                         $update = $date->date("Y-m-d", false, false);
                          $artcat = 101;
-                         if(!empty($_FILES['garantyimage']['name']))
+                         if(!empty($_FILES['aboutimage']['name']))
                          {
-                           
-                           
-                            $uploadfile = $uploaddir . basename($_FILES['garantyimage']['name']);
-                            move_uploaded_file($_FILES['garantyimage']['tmp_name'], $uploadfile);
+                            $artimg = $_FILES['aboutimage']['name'];
+                            $uploaddir = 'uploads/about/';
+                            $uploadfile = $uploaddir . basename($_FILES['aboutimage']['name']);
+                            move_uploaded_file($_FILES['aboutimage']['tmp_name'], $uploadfile);
                             $r = $db->run("UPDATE `content` SET 
                              `image` = '$artimg' ,`title`='$arttitle'
                             ,`description` = '$artdescript' ,
@@ -32,7 +32,7 @@
                          ?>
                                
                          <script>
-                         window.location.replace("index.php?page=garanty-edit&action=list&id=0");
+                         window.location.replace("index.php?page=about-edit&action=list&id=0");
                          </script>
                      <?php
 
@@ -40,7 +40,7 @@
                                ?>
 
                                 <script>
-                                window.location.replace("index.php?page=garanty-edit&action=list&id=0");
+                                window.location.replace("index.php?page=about-edit&action=list&id=0");
                                 </script>
                             <?php
                             }
