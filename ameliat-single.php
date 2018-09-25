@@ -37,15 +37,20 @@
                                                 <div class="White">
                                                     <div id="dnn_ctr449_ContentPane" class="contentpane"><!-- Start_Module_449 --><div id="dnn_ctr449_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                             <div id="dnn_ctr449_HtmlModule_lblContent" class="Normal">
-                                                                <div class="dealers_list_all"> <h1>لیست عاملیت ها </h1> <h4>فروش ، خدمات پس از فروش ، قطعات</h4> </div>
+                                                                <div class="dealers_list_all"> <h1>لیست عاملیت ها </h1>
+                                                                    <h4>فروش ، خدمات پس از فروش ، قطعات</h4>
+                                                                </div>
                                                             </div>
 
-                                                        </div><!-- End_Module_449 --></div>
+                                                        </div>
+                                                        <!-- End_Module_449 -->
+                                                    </div>
                                                 </div>
 
 
 
-                                            </div></div>
+                                            </div>
+                                        </div>
                                     </div>
                                 </section>
                             </div>
@@ -273,7 +278,8 @@
                                                                     </div>
                                                                 </div>
 
-                                                            </div><!-- End_Module_447 --></div>
+                                                            </div><!-- End_Module_447 -->
+                                                        </div>
                                                     </div>
 
 
@@ -281,317 +287,330 @@
                                                 </div></div>
                                         </div>
                                         <div class="span9">
-                                            <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane"><div class="DnnModule DnnModule-PropertyAgent DnnModule-445"><a name="445"></a>
+                                            <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane">
+                                                <div class="DnnModule DnnModule-PropertyAgent DnnModule-445">
+                                                    <a name="445"></a>
                                                     <div class="White">
-                                                        <div id="dnn_ctr445_ContentPane" class="contentpane"><!-- Start_Module_445 --><div id="dnn_ctr445_ModuleContent" class="DNNModuleContent ModPropertyAgentC">
-
-                                                                <script type="text/javascript">
-                                                                    jQuery(function() {
-                                                                        jQuery('a[rel*=lightbox127]').lightBox({
-                                                                            imageLoading: '/DesktopModules/PropertyAgent/images/lightbox/lightbox-ico-loading.gif',
-                                                                            imageBlank: '/images/spacer.gif',
-                                                                            txtImage: 'تصویر',
-                                                                            txtOf: 'از',
-                                                                            next: '(بعدی) »',
-                                                                            previous: '« (قبلی)',
-                                                                            close: '(بستن)'
-                                                                        });
-                                                                    });
-                                                                </script>
-
-                                                                <table cellpadding="0" cellspacing="0" width="100%">
-                                                                    <tbody><tr>
-                                                                        <td align="left">
-
-                                                                        </td>
-                                                                        <td align="right">
+                                                        <div id="dnn_ctr445_ContentPane" class="contentpane">
+                                                            <!-- Start_Module_445 -->
+                                                            <div id="dnn_ctr445_ModuleContent" class="DNNModuleContent ModPropertyAgentC">
 
 
 
-
-                                                                        </td>
-                                                                    </tr>
-                                                                    <tr>
-                                                                        <td height="5" colspan="2"></td>
-                                                                    </tr>
-                                                                    </tbody></table>
                                                                 <div class="Normal">
-
-                                                                    <meta charset="utf-8">
-                                                                    <title></title>
-                                                                    <style>
-                                                                        .zoom {
-                                                                            display: inline-block;
-                                                                            position: relative;
-                                                                        }
-
-                                                                        .zoom img {
-                                                                            display: block;
-                                                                        }
-
-                                                                        .zoom img::selection {
-                                                                            background-color: transparent;
-                                                                        }
-                                                                    </style>
-                                                                    <script>
-                                                                        $(document).ready(function () {
-                                                                            $('.custom_Pic_MO img').mouseenter(function () {
-                                                                                var img_hover = $(this).attr("src");
-                                                                                $(".larg_picture img").attr("src", img_hover);
-
-                                                                            });
-                                                                            $('#ex1').zoom();
-                                                                            $('.dealer_view_contetnt_tab h1:nth-child(1)').click(function () {
-                                                                                $('.dealer_view_contetnt_tab h1').removeClass("dealer_contetnt_tab_active");
-                                                                                $(this).addClass("dealer_contetnt_tab_active");
-                                                                                $(".dealer_contetnt_tab_txt2").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt3").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt1").fadeIn(300);
-                                                                            });
-                                                                            $('.dealer_view_contetnt_tab h1:nth-child(2)').click(function () {
-                                                                                $('.dealer_view_contetnt_tab h1').removeClass("dealer_contetnt_tab_active");
-                                                                                $(this).addClass("dealer_contetnt_tab_active");
-                                                                                $(".dealer_contetnt_tab_txt1").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt3").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt2").fadeIn(300);
-                                                                            });
-                                                                            $('.dealer_view_contetnt_tab h1:nth-child(3)').click(function () {
-                                                                                $('.dealer_view_contetnt_tab h1').removeClass("dealer_contetnt_tab_active");
-                                                                                $(this).addClass("dealer_contetnt_tab_active");
-                                                                                $(".dealer_contetnt_tab_txt1").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt2").css("display", "none");
-                                                                                $(".dealer_contetnt_tab_txt3").fadeIn(300);
-                                                                            });
-                                                                        });
-                                                                    </script>
+                                                                    <?php
+                                                                    $ameliatId = $_GET['id'];
+                                                                    $resultameliat = $db->select("agencies","`id` = '$ameliatId'");
+                                                                    foreach($resultameliat as $rowameliat)
+                                                                    {
+                                                                    ?>
                                                                     <div class="dealer_view_template">
                                                                         <div class="dealer_view_template_row1">
                                                                             <div class="box_photos_all">
                                                                                 <div class="larg_picture">
-                <span class="zoom" id="ex1" style="position: relative; overflow: hidden;">
-                    <img src="/Portals/0/PropertyAgent/445/Images/387.jpg" width="250" height="350" alt="Daisy on the Ohoopee" class="first_img_zoom">
-
-                <img src="/Portals/0/PropertyAgent/445/Images/387.jpg" class="zoomImg" style="position: absolute; top: -33.2822px; left: -132.496px; opacity: 0; width: 1021px; height: 501px; border: none; max-width: none; max-height: none;"></span>
+                                                                                    <img src="adminpanel/uploads/agancy/<?php echo $rowameliat['image']; ?>"
+                                                                                             width="250" height="350"
+                                                                                         alt="Daisy on the Ohoopee"
+                                                                                         class="first_img_zoom">
                                                                                 </div>
-                                                                                <div class="custom_Pic_MO">
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('/Portals/0/PropertyAgent/445/Images/387.jpg');"><img src="/Portals/0/PropertyAgent/445/Images/387.jpg"></div>
 
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad.jpg');"><img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad.jpg"></div>
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad1.jpg');"><img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad1.jpg"></div>
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad2.jpg');"><img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad2.jpg"></div>
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad4.jpg');"><img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad4.jpg"></div>
-                                                                                    <div class="custom_Pic_MO_object" style="background: url('https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad5.jpg');"><img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/Mirdamad5.jpg"></div>
-                                                                                </div>
                                                                             </div>
                                                                             <div class="dealer_info_view">
                                                                                 <div class="dealer_info_view_title">
-                                                                                    <h1>شعبه میرداماد</h1>
+                                                                                    <h1><?php echo $rowameliat['title']; ?></h1>
                                                                                     <div class="dealer_info_view_title_subtitle">
                                                                                         <h2>فروش</h2>
                                                                                     </div>
                                                                                 </div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon1.png"> شهر : </strong>تهران</div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon2.png"> نام عاملیت : </strong>شعبه میرداماد</div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon1.png">
+                                                                                        شهر : </strong><?php echo $rowameliat['city']; ?>
+                                                                                </div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon2.png">
+                                                                                        نام عاملیت : </strong><?php echo $rowameliat['title']; ?>
+                                                                                    میرداماد
+                                                                                </div>
 
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon3.png"> آدرس : </strong> تهران ، خیابان میرداماد ، زیر پل میرداماد به سمت ولیعصر </div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon4.png"> کد شهر : </strong>021</div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon5.png"> شماره تماس : </strong>88673505</div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon6.png"> فکس : </strong> 88796451</div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon3.png">
+                                                                                        آدرس : </strong><?php echo $rowameliat['address']; ?> ولیعصر
+                                                                                </div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon4.png">
+                                                                                        کد شهر : </strong><?php echo $rowameliat['city_code']; ?>
+                                                                                </div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon5.png">
+                                                                                        شماره تماس : </strong><?php echo $rowameliat['call_number']; ?>
+                                                                                </div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon6.png">
+                                                                                        فکس : </strong> <?php echo $rowameliat['fax']; ?>
+                                                                                </div>
 
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon11.png"> کدپستی : </strong>1969633874</div>
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon8.png"> پست الکترونیک : </strong>mirdamad@irtoya.com</div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon11.png">
+                                                                                        کدپستی : </strong><?php echo $rowameliat['postal_code']; ?>
+                                                                                </div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon8.png">
+                                                                                        پست الکترونیک : </strong><?php echo $rowameliat['email']; ?>
+                                                                                </div>
 
-                                                                                <div class="product_Description"><strong><img alt="" src="/Portals/0/images/Icons/cus_icon10.png"> ساعات کار : </strong>شنبه الی پنجشنبه:08:00 الی 21:00 - جمعه: 10:00 الی 21:00</div>
+                                                                                <div class="product_Description">
+                                                                                    <strong><img alt=""
+                                                                                                 src="/Portals/0/images/Icons/cus_icon10.png">
+                                                                                        ساعات کار : </strong><?php echo $rowameliat['hourse_work']; ?>
+                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                         <div class="dealer_view_template_row2">
                                                                             <div class="dealer_view_contetnt_tab">
-                                                                                <h1 class="dealer_contetnt_tab_active">نظرات و پیشنهادات</h1>
-                                                                                <h1>معرفی پرسنل</h1>
-                                                                                <h1>نقشه عاملیت</h1>
+                                                                                <h1 class="dealer_contetnt_tab_active">
+                                                                                    نظرات و پیشنهادات</h1>
+
                                                                             </div>
                                                                             <div class="dealer_view_tab_txt_all">
                                                                                 <div class="dealer_contetnt_tab_txt1">
-                                                                                    <h1>انتقادات و پیشنهادات<hr></h1>
-                                                                                    <div class="dealer_view_form_comment"><img src="/Portals/0/images/Icons/opinion_photo.png" alt="">لطفا نظرات و پیشنهادات خود را درباره ی عاملیت فوق با ما در میان بگذارید.</div>
-                                                                                    <table id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_tblCommentForm" style="width:350px;">
-                                                                                        <tbody><tr>
+                                                                                    <h1>انتقادات و پیشنهادات
+                                                                                        <hr>
+                                                                                    </h1>
+                                                                                    <div class="dealer_view_form_comment">
+                                                                                        <img src="/Portals/0/images/Icons/opinion_photo.png"
+                                                                                             alt="">لطفا نظرات و
+                                                                                        پیشنهادات خود را درباره ی عاملیت
+                                                                                        فوق با ما در میان بگذارید.
+                                                                                    </div>
+                                                                                    <table id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_tblCommentForm"
+                                                                                           style="width:350px;">
+                                                                                        <tbody>
+                                                                                        <tr>
                                                                                             <td>
-                                                                                                <table id="tblCommentFormDesign" cellspacing="2" cellpadding="2" summary="CommentForm Design Table" border="0" width="100%">
+                                                                                                <table id="tblCommentFormDesign"
+                                                                                                       cellspacing="2"
+                                                                                                       cellpadding="2"
+                                                                                                       summary="CommentForm Design Table"
+                                                                                                       border="0"
+                                                                                                       width="100%">
 
-                                                                                                    <tbody><tr valign="top">
-                                                                                                        <td class="SubHead" valign="middle" nowrap="">
+                                                                                                    <tbody>
+                                                                                                    <tr valign="top">
+                                                                                                        <td class="SubHead"
+                                                                                                            valign="middle"
+                                                                                                            nowrap="">
                                                                                                             <label id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_label_0">
-                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_0')) return false;" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_0" tabindex="-1" href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl00$cmdHelp','')"><img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_0" tabindex="-1" src="/images/help.gif" alt="نام خود را درج نمایید"></a>
+                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_0')) return false;"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_0"
+                                                                                                                   tabindex="-1"
+                                                                                                                   href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl00$cmdHelp','')"><img
+                                                                                                                            id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_0"
+                                                                                                                            tabindex="-1"
+                                                                                                                            src="/images/help.gif"
+                                                                                                                            alt="نام خود را درج نمایید"></a>
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblLabel_0">نام:</span>
                                                                                                             </label>
-                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_0" class="Help" style="display:none;">
+                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_0"
+                                                                                                                 class="Help"
+                                                                                                                 style="display:none;">
 
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblHelp_0">نام خود را درج نمایید</span>
 
                                                                                                             </div>
                                                                                                         </td>
                                                                                                         <td width="100%">
-                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl00$0" type="text" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_0_0" class="NormalTextBox" style="width:100%;"><span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_0" class="NormalRed" style="display:none;"><br>الزامی می&zwnj;باشد</span>
+                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl00$0"
+                                                                                                                   type="text"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_0_0"
+                                                                                                                   class="NormalTextBox"
+                                                                                                                   style="width:100%;"><span
+                                                                                                                    id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_0"
+                                                                                                                    class="NormalRed"
+                                                                                                                    style="display:none;"><br>الزامی می&zwnj;باشد</span>
                                                                                                         </td>
                                                                                                     </tr>
 
                                                                                                     <tr valign="top">
-                                                                                                        <td class="SubHead" valign="middle" nowrap="">
+                                                                                                        <td class="SubHead"
+                                                                                                            valign="middle"
+                                                                                                            nowrap="">
                                                                                                             <label id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_label_1">
-                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_1')) return false;" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_1" tabindex="-1" href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl01$cmdHelp','')"><img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_1" tabindex="-1" src="/images/help.gif" alt="ایمیل شما"></a>
+                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_1')) return false;"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_1"
+                                                                                                                   tabindex="-1"
+                                                                                                                   href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl01$cmdHelp','')">
+                                                                                                                    <img
+                                                                                                                            id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_1"
+                                                                                                                            tabindex="-1"
+                                                                                                                            src="/images/help.gif"
+                                                                                                                            alt="ایمیل شما">
+                                                                                                                </a>
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblLabel_1">ایمیل (نمایش داده نمی&zwnj;شود):</span>
                                                                                                             </label>
-                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_1" class="Help" style="display:none;">
+                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_1"
+                                                                                                                 class="Help"
+                                                                                                                 style="display:none;">
 
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblHelp_1">ایمیل شما</span>
 
                                                                                                             </div>
                                                                                                         </td>
                                                                                                         <td width="100%">
-                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl01$1" type="text" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_1_1" class="NormalTextBox" style="width:100%;"><span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_1" class="NormalRed" style="display:none;"><br>ایمیل درج شده با فرمت صحیح نمی&zwnj;باشد.</span>
+                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl01$1"
+                                                                                                                   type="text"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_1_1"
+                                                                                                                   class="NormalTextBox"
+                                                                                                                   style="width:100%;"><span
+                                                                                                                    id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_1"
+                                                                                                                    class="NormalRed"
+                                                                                                                    style="display:none;"><br>ایمیل درج شده با فرمت صحیح نمی&zwnj;باشد.</span>
                                                                                                         </td>
                                                                                                     </tr>
 
                                                                                                     <tr valign="top">
-                                                                                                        <td class="SubHead" valign="middle" nowrap="">
+                                                                                                        <td class="SubHead"
+                                                                                                            valign="middle"
+                                                                                                            nowrap="">
                                                                                                             <label id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_label_2">
-                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_2')) return false;" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_2" tabindex="-1" href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl02$cmdHelp','')"><img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_2" tabindex="-1" src="/images/help.gif" alt="لطفا آدرس وب سایت یا صفحه اینترنتی خود را درج نمایید."></a>
+                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_2')) return false;"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_2"
+                                                                                                                   tabindex="-1"
+                                                                                                                   href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl02$cmdHelp','')"><img
+                                                                                                                            id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_2"
+                                                                                                                            tabindex="-1"
+                                                                                                                            src="/images/help.gif"
+                                                                                                                            alt="لطفا آدرس وب سایت یا صفحه اینترنتی خود را درج نمایید."></a>
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblLabel_2">وب&zwnj;سایت:</span>
                                                                                                             </label>
-                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_2" class="Help" style="display:none;">
+                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_2"
+                                                                                                                 class="Help"
+                                                                                                                 style="display:none;">
 
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblHelp_2">لطفا آدرس وب سایت یا صفحه اینترنتی خود را درج نمایید.</span>
 
                                                                                                             </div>
                                                                                                         </td>
                                                                                                         <td width="100%">
-                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl02$2" type="text" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_2_2" class="NormalTextBox" style="width:100%;">
+                                                                                                            <input name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl02$2"
+                                                                                                                   type="text"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_2_2"
+                                                                                                                   class="NormalTextBox"
+                                                                                                                   style="width:100%;">
                                                                                                         </td>
                                                                                                     </tr>
 
                                                                                                     <tr valign="top">
-                                                                                                        <td class="SubHead" valign="middle" nowrap="">
+                                                                                                        <td class="SubHead"
+                                                                                                            valign="middle"
+                                                                                                            nowrap="">
                                                                                                             <label id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_label_3">
-                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_3')) return false;" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_3" tabindex="-1" href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl03$cmdHelp','')"><img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_3" tabindex="-1" src="/images/help.gif" alt="لطفا نظر خود در این قسمت ارسال نمایید."></a>
+                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_3')) return false;"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_3"
+                                                                                                                   tabindex="-1"
+                                                                                                                   href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl03$cmdHelp','')"><img
+                                                                                                                            id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_3"
+                                                                                                                            tabindex="-1"
+                                                                                                                            src="/images/help.gif"
+                                                                                                                            alt="لطفا نظر خود در این قسمت ارسال نمایید."></a>
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblLabel_3">نظر:</span>
                                                                                                             </label>
-                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_3" class="Help" style="display:none;">
+                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_3"
+                                                                                                                 class="Help"
+                                                                                                                 style="display:none;">
 
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblHelp_3">لطفا نظر خود در این قسمت ارسال نمایید.</span>
 
                                                                                                             </div>
                                                                                                         </td>
                                                                                                         <td width="100%">
-                                                                                                            <textarea name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl03$3" rows="5" cols="20" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_3_3" class="NormalTextBox" style="width:100%;"></textarea><span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_3" class="NormalRed" style="display:none;"><br>الزامی می&zwnj;باشد</span>
+                                                                                                            <textarea
+                                                                                                                    name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl03$3"
+                                                                                                                    rows="5"
+                                                                                                                    cols="20"
+                                                                                                                    id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_3_3"
+                                                                                                                    class="NormalTextBox"
+                                                                                                                    style="width:100%;"></textarea><span
+                                                                                                                    id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_ctl00_3"
+                                                                                                                    class="NormalRed"
+                                                                                                                    style="display:none;"><br>الزامی می&zwnj;باشد</span>
                                                                                                         </td>
                                                                                                     </tr>
 
                                                                                                     <tr valign="top">
-                                                                                                        <td class="SubHead" valign="middle" nowrap="">
+                                                                                                        <td class="SubHead"
+                                                                                                            valign="middle"
+                                                                                                            nowrap="">
                                                                                                             <label id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_label_4">
-                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_4')) return false;" id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_4" tabindex="-1" href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl04$cmdHelp','')"><img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_4" tabindex="-1" src="/images/help.gif" alt="در صورت تمایل به پیگیری نظرات دیگر کاربران، این گزینه را انتخاب نمایید.
+                                                                                                                <a onclick="if (__dnn_SectionMaxMin(this,  'dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_4')) return false;"
+                                                                                                                   id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_cmdHelp_4"
+                                                                                                                   tabindex="-1"
+                                                                                                                   href="javascript:__doPostBack('dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl04$cmdHelp','')"><img
+                                                                                                                            id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_imgHelp_4"
+                                                                                                                            tabindex="-1"
+                                                                                                                            src="/images/help.gif"
+                                                                                                                            alt="در صورت تمایل به پیگیری نظرات دیگر کاربران، این گزینه را انتخاب نمایید.
 نظرات دیگر کاربران از طریق ایمیل به اطلاع شما می&zwnj;رسد."></a>
                                                                                                                 <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblLabel_4">یادآوری؟:</span>
                                                                                                             </label>
-                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_4" class="Help" style="display:none;">
+                                                                                                            <div id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_pnlHelp_4"
+                                                                                                                 class="Help"
+                                                                                                                 style="display:none;">
 
 					                <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_lblHelp_4">در صورت تمایل به پیگیری نظرات دیگر کاربران، این گزینه را انتخاب نمایید.
+
 نظرات دیگر کاربران از طریق ایمیل به اطلاع شما می&zwnj;رسد.</span>
 
                                                                                                             </div>
                                                                                                         </td>
                                                                                                         <td width="100%">
-                                                                                                            <span class="NormalTextBox"><input id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_4_4" type="checkbox" name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl04$4"></span>
+                                                                                                            <span class="NormalTextBox"><input
+                                                                                                                        id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_rptDetails_4_4"
+                                                                                                                        type="checkbox"
+                                                                                                                        name="dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$rptDetails$ctl04$4"></span>
                                                                                                         </td>
                                                                                                     </tr>
 
                                                                                                     <tr valign="top">
-                                                                                                        <td colspan="2" align="center">
-                                                                                                            <a id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_cmdSubmit" class="CommandButton" href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$cmdSubmit", "", true, "PropertyAgent-840-Comment", "", false, true))' style="display:inline-block;border-style:None;">ارسال</a>
+                                                                                                        <td colspan="2"
+                                                                                                            align="center">
+                                                                                                            <a id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_cmdSubmit"
+                                                                                                               class="CommandButton"
+                                                                                                               href='javascript:WebForm_DoPostBackWithOptions(new WebForm_PostBackOptions("dnn$ctr445$Default$ViewProperty$PropertyAgent-840127-140$cmdSubmit", "", true, "PropertyAgent-840-Comment", "", false, true))'
+                                                                                                               style="display:inline-block;border-style:None;">ارسال</a>
                                                                                                         </td>
                                                                                                     </tr>
                                                                                                     <tr valign="top">
-                                                                                                        <td colspan="2" align="center">
-                                                                                                            <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_lblSubmitResults" class="NormalRed"></span>
+                                                                                                        <td colspan="2"
+                                                                                                            align="center">
+                                                                                                            <span id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-140_lblSubmitResults"
+                                                                                                                  class="NormalRed"></span>
                                                                                                         </td>
                                                                                                     </tr>
-                                                                                                    </tbody></table>
+                                                                                                    </tbody>
+                                                                                                </table>
                                                                                             </td>
                                                                                         </tr>
-                                                                                        </tbody></table>
+                                                                                        </tbody>
+                                                                                    </table>
                                                                                 </div>
-                                                                                <div class="dealer_contetnt_tab_txt2">
-                                                                                    <h1>معرفی پرسنل <hr></h1>
-                                                                                    <div class="persenel_total">
-
-                                                                                        <div class="assistant_all">
-                                                                                            <div class="assistant_img">
-                                                                                                <div class="tborder"></div>
-                                                                                                <div class="assistant_txt_hover">
-                                                                                                    <h3>سحر حیدریان</h3>
-                                                                                                    سرپرست شعبه
-                                                                                                </div>
-                                                                                                <img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/sahar heidarian.png" alt="">
-                                                                                            </div>
-                                                                                            <div class="assistant_txt">
-                                                                                                <h3>سحر حیدریان</h3>
-                                                                                                سرپرست شعبه
-                                                                                            </div>
-                                                                                        </div>
 
 
-                                                                                        <div class="assistant_all">
-                                                                                            <div class="assistant_img">
-                                                                                                <div class="tborder"></div>
-                                                                                                <div class="assistant_txt_hover">
-                                                                                                    <h3>محمد خلیل نژاد</h3>
-                                                                                                    کارشناس فروش
-                                                                                                </div>
-                                                                                                <img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/محمد خلیل نژادی.jpg" alt="">
-                                                                                            </div>
-                                                                                            <div class="assistant_txt">
-                                                                                                <h3>محمد خلیل نژاد</h3>
-                                                                                                کارشناس فروش
-                                                                                            </div>
-                                                                                        </div>
-
-
-                                                                                        <div class="assistant_all">
-                                                                                            <div class="assistant_img">
-                                                                                                <div class="tborder"></div>
-                                                                                                <div class="assistant_txt_hover">
-                                                                                                    <h3>منصوره میگونی</h3>
-                                                                                                    کارشناس فروش
-                                                                                                </div>
-                                                                                                <img src="https://arita.irtoya.com:443/Portals/0/PropertyAgent/445/Files/127/meigooni.png" alt="">
-                                                                                            </div>
-                                                                                            <div class="assistant_txt">
-                                                                                                <h3>منصوره میگونی</h3>
-                                                                                                کارشناس فروش
-                                                                                            </div>
-                                                                                        </div>
-
-
-
-
-
-
-                                                                                    </div>
-                                                                                </div>
-                                                                                <div class="dealer_contetnt_tab_txt3">
-                                                                                    <h1>نقشه نمایندگی <hr></h1>
-                                                                                    <img id="dnn_ctr445_Default_ViewProperty_PropertyAgent-840127-254" src="http://maps.google.com/maps/api/staticmap?center=35.76235,51.41834&amp;zoom=16&amp;size=500x300&amp;markers=size:mid|color:red|label:A|35.76235,51.41834&amp;sensor=false">
-                                                                                </div>
                                                                             </div>
                                                                         </div>
                                                                     </div>
                                                                 </div>
-                                                                <script type="text/javascript">
-                                                                    function ReceiveServerData(arg)
-                                                                    {
-                                                                    }
-                                                                </script>
+                                                                <?php
+                                                                }
+                                                                    ?>
+
 
 
                                                             </div><!-- End_Module_445 --></div>

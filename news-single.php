@@ -131,9 +131,12 @@
                                             </div></div>
                                     </div>
                                     <div class="span9">
-                                        <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane"><div class="DnnModule DnnModule-DnnForge-NewsArticles DnnModule-597"><a name="597"></a>
+                                        <div id="dnn_RowOne_Grid9_Pane" class="RowOne_Grid9_Pane">
+                                            <div class="DnnModule DnnModule-DnnForge-NewsArticles DnnModule-597">
+                                                <a name="597"></a>
                                                 <div class="White">
-                                                    <div id="dnn_ctr597_ContentPane" class="contentpane"><!-- Start_Module_597 --><div id="dnn_ctr597_ModuleContent" class="DNNModuleContent ModDnnForgeNewsArticlesC">
+                                                    <div id="dnn_ctr597_ContentPane" class="contentpane"><!-- Start_Module_597 -->
+                                                        <div id="dnn_ctr597_ModuleContent" class="DNNModuleContent ModDnnForgeNewsArticlesC">
                                                             <!--CDF(Javascript|/desktopmodules/dnnforge - newsarticles/includes/shadowbox/shadowbox.js)-->
                                                             <!--CDF(Css|/desktopmodules/dnnforge - newsarticles/includes/shadowbox/shadowbox.css)-->
 
@@ -141,91 +144,80 @@
                                                                 <!-- Menu.Item -->
                                                                 <div class="Normal" align="center">
 
-    <span style="float: right;">
-        <a rel="nofollow" href="/DesktopModules/DnnForge%20-%20NewsArticles/Rss.aspx?TabID=174&amp;ModuleID=597&amp;MaxCount=25">
-            <!--<img src="/DesktopModules/DnnForge - NewsArticles/Templates/Default/Images/rssbutton.gif" alt="25 Latest Articles" style="border-width: 0px;" />-->
-        </a>
-    </span>
-
-                                                                    <table width="500px" cellpadding="0" cellspacing="0" border="0" style="padding-bottom:10px;">
-                                                                        <tbody><tr>
+                                                                        <span style="float: right;">
+                                                                            <a rel="nofollow" href="/DesktopModules/DnnForge%20-%20NewsArticles/Rss.aspx?TabID=174&amp;ModuleID=597&amp;MaxCount=25">
+                                                                                <!--<img src="/DesktopModules/DnnForge - NewsArticles/Templates/Default/Images/rssbutton.gif" alt="25 Latest Articles" style="border-width: 0px;" />-->
+                                                                            </a>
+                                                                        </span>
 
 
-
-                                                                        </tr>
-                                                                        </tbody></table>
                                                                 </div>
+
+
 
                                                                 <!-- View.Item -->
 
                                                                 <meta http-equiv="Content-Type" content="text/html; charset=unicode">
-                                                                <script>
-                                                                    $(document).ready(function () {
-                                                                        var ct_txt = $(".category-link-div a").html();
-                                                                        $(".category-link").attr("title", ct_txt);
-                                                                    });
-                                                                </script>
-                                                                <!--start-article-->
-                                                                <?php
-                                                                $resultarticle = $db->select("content","`type` = 'news'");
-                                                                foreach($resultarticle as $rows) {
-                                                                    ?>
-                                                                    <div class="artc-template">
-                                                                        <div class="artc-img">
-                                                                            <a href="news-single.php?id=<?php echo $rows['id']; ?>">
-                                                                                <img height="200" width="260" src="adminpanel/uploads/news/<?php echo $rows['image']; ?>"
-                                                                                     alt="<?php echo $rows['title']; ?>"></a>
-                                                                        </div>
 
-                                                                        <div class="artc-txt">
-                                                                            <h1><a href="article-single.php?id=<?php echo $rows['id']; ?>"><?php echo $rows['title']; ?></a></h1>
-                                                                            <p><?php echo  substrwords($rows['description'],800); ?></p>
-                                                                            <div class="arct-info">
-                                                                                <div class="artc-date">تاریخ : <?php echo  $rows['create_at']; ?>
-                                                                                </div>
-                                                                                <div class="category-link-div">
-                                                                                    <a href=""> گارانتی و
-                                                                                        وارانتی</a></div>
-                                                                                <div class="article_news_Details">
-                                                                                    <a rel="tooltip"
-                                                                                       href=""
-                                                                                       class="category-link"
-                                                                                       data-original-title=" گارانتی و وارانتی"><img
-                                                                                                alt=""
-                                                                                                src="_Content_images/icons/Yelp-icon.png"></a>
-                                                                                    <a rel="tooltip"
-                                                                                       href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/ID/287/جدول-سرویس-دوره-ای-خودروهای-هیبرید#Comments"
-                                                                                       data-original-title="نظرات (8)"><img
-                                                                                                alt=""
-                                                                                                src="_Content_images/Icons/comment-icon-news.png"></a>
-                                                                                    <a rel="tooltip"
-                                                                                       href="article-single.php?id=<?php echo $rows['id']; ?>"
-                                                                                       data-original-title="ارسال به دوستان"><img
-                                                                                                alt=""
-                                                                                                src="_Content_images/Icons/send-news-icon.png"></a>
-                                                                                </div>
-                                                                                <div class="arct-vd">
-                                                                                    <a href="article-single.php?id=<?php echo $rows['id']; ?>">مشاهده
-                                                                                        جزییات</a>
-                                                                                </div>
+                                                                <?php
+                                                                $newsid = $_GET['id'];
+
+                                                                $rearticle = $db->select("content","`id`='$newsid'");
+
+                                                                foreach($rearticle as $rowarticle){
+
+
+                                                                ?>
+                                                                <div class="articleView_edu article-template">
+
+                                                                    <div class="articleView_edu_txt">
+                                                                        <div class="articleView-rightside">
+
+                                                                            <div class="articleView_edu_img">
+                                                                                <img height="220" width="260" src="adminpanel/uploads/articles/<?php echo $rowarticle['image']; ?>" alt="جدول سرویس دوره ای خودروهای هیبرید">
+                                                                            </div>
+
+
+
+
+                                                                        </div>
+                                                                        <div class="articleView-leftside">
+                                                                            <div class="articleView_edu_title">
+
+                                                                                <h1><?php echo $rowarticle['title']; ?></h1>
+                                                                                <h3>
+                                                                                    <span><?php echo $rowarticle['create_at']; ?></span>
+
+                                                                                </h3>
+                                                                                <?php echo substrwords($rowarticle['description'], 500); ?>
+
                                                                             </div>
                                                                         </div>
-                                                                    </div> <!-- View.Item -->
-                                                                    <?php
-                                                                };
-                                                                ?>
-
-                                                                <!-- Listing.Foorter -->
-
-                                                                <table class="PagingTable">
-                                                                    <tbody><tr>
-                                                                        <td align="left">صفحه 1 از 4</td><td align="right"><span>ابتدا</span>&nbsp;&nbsp;&nbsp;<span>قبلی</span>&nbsp;&nbsp;&nbsp;<span>[1]</span>&nbsp;&nbsp;<a href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/currentpage/2">2</a>&nbsp;&nbsp;<a href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/currentpage/3">3</a>&nbsp;&nbsp;<a href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/currentpage/4">4</a>&nbsp;&nbsp;<a href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/currentpage/2">بعدی</a>&nbsp;&nbsp;&nbsp;<a href="https://arita.irtoya.com/خدمات-پس-از-فروش/فنی-و-سرویس/معرفی-واحد-آموزش-ایرتویا/مقالات-آموزشی/currentpage/4">انتها</a>&nbsp;&nbsp;&nbsp;</td>
-                                                                    </tr>
-                                                                    </tbody></table>
+                                                                    </div>
+                                                                    <div class="article-tabs-template">
+                                                                        <div class="article-description">
+                                                                            <?php echo $rowarticle['description']; ?>
+                                                                        </div>
 
 
+                                                                        <?php
+                                                                        }
+                                                                        ?>
 
 
+                                                                    </div>
+                                                                </div>
+
+
+                                                                <script type="text/javascript">
+                                                                    $('.NewsArticles a[href]').filter(function () {
+                                                                        return /(jpg|gif|png)$/.test($(this).attr('href'))
+                                                                    }).attr('rel', 'shadowbox[287]');
+
+                                                                    Shadowbox.init({
+                                                                        handleOversize: "drag"
+                                                                    });
+                                                                </script>
                                                             </div>
                                                         </div><!-- End_Module_597 --></div>
                                                 </div>
