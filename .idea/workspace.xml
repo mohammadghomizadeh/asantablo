@@ -2,31 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="df0fcbe1-dd74-46ec-8585-42f691db5b1f" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/adminpanel/pages/news-new.php" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminpanel/uploads/agencyes/IMG_6986-j.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminpanel/uploads/agencyes/instagram-png-instagram-png-logo-1455.jpg" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/adminpanel/uploads/news/net.iGap_512x512.png" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/layouts/menu.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/layouts/menu.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/agency-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/agency-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/agency.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/agency.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/service-other.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/news-other.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/services-delete.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/news-delete.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/services-edit.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/news-edit.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/services-new.php" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/pages/services.php" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/pages/news.php" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/15276682_110465779447771_4445541492118781952_n.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/15276682_110465779447771_4445541492118781952_n.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/7.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/7.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/car-repair.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/car-repair.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/engine-2.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/engine-2.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/engine-alarms.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/engine-alarms.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/gbaw_1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/gbaw_1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/lights.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/lights.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/mechanic.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/mechanic.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/pelakebeheshtir_proposal1-1.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/pelakebeheshtir_proposal1-1.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/radiator.png" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/radiator.png" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/adminpanel/uploads/services/عکس-نوشته-مادر.jpg" beforeDir="false" afterPath="$PROJECT_DIR$/adminpanel/uploads/news/عکس-نوشته-مادر.jpg" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/news.php" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/_Content/stylesheet/app.css" beforeDir="false" afterPath="$PROJECT_DIR$/_Content/stylesheet/app.css" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -47,25 +24,25 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
-          <entry key="css" value="1" />
+          <entry key="css" value="11" />
           <entry key="php" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
-          <entry key="CSS" value="1" />
+          <entry key="CSS" value="11" />
           <entry key="PHP" value="26" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="css" value="11" />
+          <entry key="css" value="43" />
           <entry key="php" value="2667" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="CSS" value="11" />
+          <entry key="CSS" value="43" />
           <entry key="PHP" value="2667" />
         </counts>
       </usages-collector>
@@ -73,29 +50,78 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/news-single.php">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="209">
-              <caret line="96" column="39" selection-start-line="96" selection-start-column="39" selection-end-line="96" selection-end-column="39" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/news.php">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/app.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="352">
-              <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+            <state relative-caret-position="432">
+              <caret line="129" column="10" lean-forward="true" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/articles.php">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/css.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/default.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/module.css">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/portal.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="208">
-              <caret line="40" column="49" lean-forward="true" selection-end-line="601" selection-end-column="47" />
+            <state relative-caret-position="160">
+              <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Setting.rtl.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-31" />
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Style.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="113">
+              <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Template.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1759">
+              <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Theme.rtl.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="129">
+              <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/_Content/stylesheet/TemplateS.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="192">
+              <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
             </state>
           </provider>
         </entry>
@@ -112,6 +138,7 @@
       <find>product_template</find>
       <find>custom_Pic_MO</find>
       <find>اخبار و اطلاعیه ها</find>
+      <find>@font</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -131,6 +158,7 @@
         <option value="$PROJECT_DIR$/ameliat-single.php" />
         <option value="$PROJECT_DIR$/news-single.php" />
         <option value="$PROJECT_DIR$/news.php" />
+        <option value="$PROJECT_DIR$/_Content/stylesheet/app.css" />
       </list>
     </option>
   </component>
@@ -178,6 +206,23 @@
               <item name="golshani" type="b2602c69:ProjectViewProjectNode" />
               <item name="golshani" type="462c0819:PsiDirectoryNode" />
             </path>
+            <path>
+              <item name="golshani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golshani" type="462c0819:PsiDirectoryNode" />
+              <item name="_Content" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golshani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golshani" type="462c0819:PsiDirectoryNode" />
+              <item name="_Content" type="462c0819:PsiDirectoryNode" />
+              <item name="fonts" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="golshani" type="b2602c69:ProjectViewProjectNode" />
+              <item name="golshani" type="462c0819:PsiDirectoryNode" />
+              <item name="_Content" type="462c0819:PsiDirectoryNode" />
+              <item name="stylesheet" type="462c0819:PsiDirectoryNode" />
+            </path>
           </expand>
           <select />
         </subPane>
@@ -214,12 +259,12 @@
       <updated>1537782671855</updated>
       <workItem from="1537782673722" duration="7507000" />
       <workItem from="1537856367765" duration="12418000" />
-      <workItem from="1537871756526" duration="833000" />
+      <workItem from="1537871756526" duration="1672000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20758000" />
+    <option name="totallyTimeSpent" value="21597000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="1550" height="838" extended-state="6" />
@@ -326,13 +371,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Template.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="398">
-          <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/news-single.php">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="209">
@@ -351,6 +389,62 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="352">
           <caret line="31" column="58" lean-forward="true" selection-start-line="31" selection-start-column="58" selection-end-line="31" selection-end-column="58" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/default.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/module.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/portal.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="160">
+          <caret line="10" column="1" selection-start-line="10" selection-start-column="1" selection-end-line="10" selection-end-column="1" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Setting.rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-31" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Style.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="113">
+          <caret line="9" column="44" selection-start-line="9" selection-start-column="44" selection-end-line="9" selection-end-column="44" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Template.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1759">
+          <caret line="663" column="18" selection-start-line="663" selection-start-column="18" selection-end-line="663" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/Theme.rtl.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="129">
+          <caret line="10" column="54" lean-forward="true" selection-start-line="10" selection-start-column="54" selection-end-line="10" selection-end-column="54" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/TemplateS.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="192">
+          <caret line="12" column="53" selection-start-line="12" selection-start-column="53" selection-end-line="12" selection-end-column="53" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/css.css">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/_Content/stylesheet/app.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="432">
+          <caret line="129" column="10" lean-forward="true" selection-start-line="129" selection-start-column="10" selection-end-line="129" selection-end-column="10" />
         </state>
       </provider>
     </entry>

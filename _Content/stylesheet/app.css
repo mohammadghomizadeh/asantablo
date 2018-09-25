@@ -1,5 +1,14 @@
 @charset "utf-8";
-
+@font-face {
+    font-family: noshad;
+    font-style: normal;
+    font-weight: bold;
+    src: url('../fonts/noshad.eot');
+    src: url('../fonts/noshad.eot?#iefix') format('embedded-opentype'),
+        /* IE6-8 */ url('../fonts/noshad.woff2') format('woff2'),
+        /* FF39+,Chrome36+, Opera24+*/ url('../fonts/noshad.woff') format('woff'),
+        /* FF3.6+, IE9, Chrome6+, Saf5.1+*/ url('../fonts/noshad.ttf') format('truetype');
+}
 html,
 body,
 div,
@@ -78,6 +87,7 @@ video {
     padding: 0;
     border: 0;
     vertical-align: baseline;
+    font-family: noshad !important;
 }
 
 article,
@@ -92,6 +102,7 @@ menu,
 nav,
 section {
     display: block;
+    font-family: noshad !important;
 }
 
 ol,
