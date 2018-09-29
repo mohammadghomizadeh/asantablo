@@ -64,16 +64,6 @@
             </div>
         </li>
         <li class="is-on">
-            <!--<div class="box-item-wrapper">
-                           <div class="box-item-option">
-                               <a href="/newsportal/international"><img alt="What is new in toyota" src="/portals/0/Images/HomePage/UpcomingNews.jpg" title="What is new in toyota" /></a>
-                               <div class="box-item-content">
-                                   <a class="box-item-heading" href="/newsportal/international">تازه های تویوتا </a>
-                                   <p class="box-item-text">پایگاه اطلاع رسانی و روابط عمومی شرکت ایرتویا در راستای اطلاع رسانی دقیق و بهنگام به مشتریان گرامی و وفادار تویوتا ، اقدام به انتشار آخرین اخبار ، رخدادها و تازه های تویوتا در ایران و سراسر جهان نموده است.</p>
-                                   <a class="box-item-link" href="/newsportal/international">مشاهده ی جزییات</a>
-                               </div>
-                           </div>
-                       </div>-->
             <div class="box-item-wrapper">
                 <div class="box-item-option">
                     <a href="/irtoyacampaign"><img alt="What is new in toyota" src="_Content/images/HomePage/Corolla-Airbag.png" title="Corolla-Recall-AirBag"></a>

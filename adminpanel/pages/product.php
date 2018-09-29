@@ -65,8 +65,57 @@ if($action == "new"){?>
                                                         });
                                                     
                                                 </script>
-                                            <p class="help-block">تصاویر با کیفیت خوب و حجم پایین بارگزاری شود.باتشکر</p>
+                                            <p class="help-block">تصاویر با کیفیت خوب و حجم پایین بارگذاری شود.باتشکر</p>
                                         </div>
+                                        <div class="form-group">
+
+<label for="producticons">بارگذاری تصویر دوم محصول</label>
+
+<input type="file"  name="producticons" id="producticons" required >
+<p id="error1" style="display:none; color:#FF0000;">
+Invalid Image Format! Image Format Must Be JPG, JPEG, PNG or GIF.
+</p>
+<p id="error2" style="display:none; color:#FF0000;">
+Maximum File Size Limit is 1MB.
+</p>
+<script type='text/javascript' src='https://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js'></script>
+
+    <script>
+
+    
+
+    
+            $('input[type="submit"]').prop("disabled", true);
+            var a=0;
+            //binds to onchange event of your input field
+            $('#producticons').bind('change', function() {
+            if ($('input:submit').attr('disabled',false)){
+                $('input:submit').attr('disabled',true);
+                }
+            var ext = $('#producticons').val().split('.').pop().toLowerCase();
+            if ($.inArray(ext, ['gif','png','jpg','jpeg']) == -1){
+                $('#error1').slideDown("slow");
+                $('#error2').slideUp("slow");
+                a=0;
+                }else{
+                var picsize = (this.files[0].size);
+                if (picsize > 1000000){
+                $('#error2').slideDown("slow");
+                a=0;
+                }else{
+                a=1;
+                $('#error2').slideUp("slow");
+                }
+                $('#error1').slideUp("slow");
+                if (a==1){
+                $('input:submit').attr('disabled',false);
+                }
+            }
+            });
+        
+    </script>
+<p class="help-block">تصاویر با کیفیت خوب و حجم پایین بارگزاری شود.باتشکر</p>
+</div>
                                         <div class="form-group">
                                         <input class="btn bg-olive btn-flat margin" type="submit" id="submit" name="submit" value="ارسال مطلب"> 
                                         </div>

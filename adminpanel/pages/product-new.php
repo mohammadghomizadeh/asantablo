@@ -13,6 +13,7 @@ if(isset($_POST['submit'])){
                     "title" => $producttitle,
                     "description" => $productdescription ,
                     "image" => $productimg ,
+                    "images" => $productimgs ,
                      "sort" => 1 ,
                      "type" => product ,
                       "create_at" => $ctime));

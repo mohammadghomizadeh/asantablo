@@ -37,7 +37,7 @@
                                                 <div id="dnn_ctr596_ContentPane" class="contentpane"><!-- Start_Module_596 --><div id="dnn_ctr596_ModuleContent" class="DNNModuleContent ModDNNHTMLC">
                                                         <div id="dnn_ctr596_HtmlModule_lblContent" class="Normal">
                                                             <div class="Branches_all accessories_title">
-                                                                <h1>مقالات آموزشی</h1>
+                                                                <h1>اخبار و اطلاعیه ها</h1>
                                                             </div>
                                                         </div>
 

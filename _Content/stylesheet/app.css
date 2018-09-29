@@ -24264,11 +24264,11 @@ ul.dnnActionMenuBody li ul li a img {
     padding: 0;
     float: left;
     margin: 0;
-    background: url("../../../Portals/0/Skins/Irtoya1393/images/logos-sprite.png") no-repeat 50% 50%;
+    background: url("http://localhost/team-asantablo/_content/images/servise/logo.png") no-repeat 50% 50%;
     background-position: -0px -0px;
-    width: 147px;
-    height: 35px;
-    margin-top: 12px;
+    width: 190px;
+    height: 58px;
+    margin-top: 5px;
 }
 
 .dnn_logo {
@@ -24854,7 +24854,7 @@ header nav {
 }
 
 .tcom-vehicles-mobile-category.category-open .toggle-icon::after {
-    border-top-color: #c00;
+    border-top-color: #0C4DA2;
 }
 
 .tcom-vehicles-mobile-category.category-open .tcom-vehicles-mobile-slider-frame {
@@ -24916,11 +24916,11 @@ header nav {
 }
 
 .tcom-gnav-model.tcom-gnav-model-mobile:hover .gnav-copy-wrap h3 {
-    color: #c00 !important;
+    color: #0C4DA2 !important;
 }
 
 .header-phone .logo-mobile-img {
-    background: url("../../../Portals/0/Skins/Irtoya1393/images/logos-sprite.png") no-repeat 50% 50%;
+    background: url("http://localhost/team-asantablo/_content/images/icons/logos-sprite.png") no-repeat 50% 50%;
     background-position: -0px -35px;
     width: 85px;
     height: 29px;
@@ -24952,8 +24952,8 @@ header nav {
 }
 
 .Login a.UserLink svg {
-    color: rgb(204, 0, 0);
-    fill: rgb(204, 0, 0);
+    color: rgb(0, 20, 204);
+    fill: rgb(0, 20, 204);
     height: 12px;
     margin-left: 7px;
     margin-top: 4px;
@@ -24962,7 +24962,7 @@ header nav {
 }
 
 .Login a.UserLink svg g {
-    fill: rgb(204, 0, 0);
+    fill: rgb(0, 20, 204);
     vertical-align: middle;
 }
 
@@ -25139,7 +25139,7 @@ a.breadcrumb:visited {
 }
 
 .breadcrumbRight > span {
-    color: #c00;
+    color: #0C4DA2;
     font-size: 11px;
 }
 
@@ -25239,7 +25239,7 @@ a.breadcrumb:hover {
 a.search:link,
 a.search:active,
 a.search:visited {
-    background: url("../../../Portals/0/Skins/Irtoya1393/images/logos-sprite.png");
+    background: url("http://localhost/team-asantablo/_content/images/icons/logos-sprite.png");
     width: 34px;
     height: 35px;
     text-decoration: none;
@@ -25292,9 +25292,10 @@ a.search:hover {}
 }
 
 #search input.NormalTextBox:focus {
-    border-bottom: 2px solid #c00;
+    border-bottom: 2px solid #0C4DA2 !important;
 }
-
+input.NormalTextBox:focus {
+    border:none !important;}
 #search .searchInputContainer {
     position: static !important;
 }
@@ -25736,7 +25737,7 @@ a.search:hover {}
 
 #to_top:hover::after {
     transform: scale(1);
-    background-color: #c00;
+    background-color: #0C4DA2;
 }
 
 #to_top {
@@ -28463,7 +28464,7 @@ a.Button_green span.glyphicons {
 
 .Footer_Bottombg a:hover,
 .Links_List li a:hover {
-    color: #c00 !important;
+    color: #0C4DA2 !important;
     text-decoration: none !important;
 }
 
@@ -28504,7 +28505,7 @@ a.Button_green span.glyphicons {
 }
 
 .footer-sp-links .ft-sp-lnk:last-child {
-    background: #c00;
+    background: #0C4DA2;
     margin-right: 0;
     float: left;
 }
@@ -28561,7 +28562,7 @@ a.Button_green span.glyphicons {
 .footer-links-col h3 button span {
     width: 2px;
     height: 16px;
-    background: #c00;
+    background: #0C4DA2;
     position: absolute;
     top: 0;
     right: 8px;
@@ -28582,7 +28583,7 @@ a.Button_green span.glyphicons {
 
 .footer-links-col ul li a:hover,
 .footer-links-col ul li:hover a {
-    color: #c00;
+    color: #0C4DA2;
 }
 
 @media screen and (max-width:1200px) {
@@ -29326,8 +29327,8 @@ a.Button_green span.glyphicons {
 }
 
 .toyota_top_menu_links a::after {
-    background: #c00 none repeat scroll 0 0;
-    color: #c00;
+    background: #0C4DA2 none repeat scroll 0 0;
+    color: #0C4DA2;
     content: "";
     display: block;
     height: 3px;
@@ -29395,7 +29396,7 @@ a.Button_green span.glyphicons {
 }
 
 #dnn_ctr428_HtmlModule_lblContent a {
-    color: #c00;
+    color: #0C4DA2;
     font-size: 15px;
     font-weight: normal;
     text-align: center;
@@ -29558,7 +29559,7 @@ a.Button_green span.glyphicons {
 }
 
 .all_products_link:hover {
-    background-color: #c00;
+    background-color: #0C4DA2;
 }
 
 .all_products_link > a {
@@ -29640,7 +29641,7 @@ a.Button_green span.glyphicons {
 
 .menu_slider_right_arrow:hover,
 .menu_slider_left_arrow:hover {
-    background: #c00;
+    background: #0C4DA2;
 }
 
 .menu_slider_right_arrow:hover svg g,
@@ -29678,8 +29679,8 @@ a.Button_green span.glyphicons {
 
 .sliding_page_items_box h5 a:nth-child(2) {
     border-right: 1px solid #999;
-    color: #c00;
-    text-shadow: 0.4px 0 #c00;
+    color:#0C4DA2;
+    text-shadow: 0.4px 0 #0C4DA2;
     padding-right: 15px;
     padding-left: 0;
 }
@@ -29689,7 +29690,7 @@ a.Button_green span.glyphicons {
 }
 
 .sliding_page_items .sliding_page_items_box:hover h3 {
-    color: #c00;
+    color: #0C4DA2;
 }
 
 .toyota_top_menu_links span {
@@ -29713,8 +29714,8 @@ a.Button_green span.glyphicons {
 .toyota_top_menu_links:nth-child(2) span::after,
 .toyota_top_menu_links:nth-child(3) span::after,
 .toyota_top_menu_links:nth-child(4) span::after {
-    background: #c00 none repeat scroll 0 0;
-    color: #c00;
+    background: #0C4DA2 none repeat scroll 0 0;
+    color: #0C4DA2;
     content: "";
     display: block;
     height: 2px;
@@ -29780,7 +29781,7 @@ a.Button_green span.glyphicons {
 }
 
 .several_box_title > hr {
-    border-color: #c00;
+    border-color: #0C4DA2;
     border-top: medium none;
     float: none;
     margin: 15px auto;
@@ -30094,7 +30095,7 @@ h1.np-title {
 }
 
 .call-fix-body > a {
-    background: rgb(204, 0, 0) none repeat scroll 0 0;
+    background: rgb(0, 20, 204) none repeat scroll 0 0;
     border-radius: 50px;
     bottom: 0;
     display: block;
@@ -30360,7 +30361,7 @@ h1.np-title {
 
 .DnnModule-LiveSlider .ls-nav-next:hover,
 .DnnModule-LiveSlider .ls-nav-prev:hover {
-    background-color: #c00 !important;
+    background-color: #0C4DA2 !important;
 }
 
 .slideshow_paragraph {
@@ -30437,8 +30438,8 @@ a.ls-l img.ls-preloaded {
 }
 
 .slideshow_paragraph > h4 > a {
-    background: #c00 none repeat scroll 0 0;
-    border: 2px solid #c00;
+    background:#0C4DA2 none repeat scroll 0 0;
+    border: 2px solid #0C4DA2;
     border-radius: 25px;
     color: #fff !important;
     font-weight: normal;
@@ -30731,8 +30732,8 @@ a.ls-l img.ls-preloaded {
 
 .vehicles-tab-itmes li::after {
     margin-top: 2px;
-    background: #c00 none repeat scroll 0 0;
-    color: #c00;
+    background: #0C4DA2 none repeat scroll 0 0;
+    color: #0C4DA2;
     content: "";
     display: block;
     height: 3px;
@@ -30854,7 +30855,7 @@ a.ls-l img.ls-preloaded {
 }
 
 .vehicles-tab-content .thumbs div.thumb h5 a {
-    color: #c00;
+    color: #0C4DA2;
     display: inline-block;
     font-size: 12px;
     font-weight: normal;
@@ -31318,9 +31319,9 @@ ul.box-tmp li {
 }
 
 .box-item-content .box-item-link {
-    color: #c00;
+    color: #0C4DA2;
     font-size: 12px;
-    text-shadow: 0 0 #c00;
+    text-shadow: 0 0 #0C4DA2;
 }
 
 ul.box-tmp li:nth-child(5) {
@@ -31478,7 +31479,7 @@ ul.box-tmp li.is-on {
     margin-top: 0;
     margin-bottom: 0;
     color: #fff;
-    background: #c00;
+    background: #0C4DA2;
     padding: 20px;
 }
 
@@ -31495,7 +31496,7 @@ ul.box-tmp li.is-on {
 .pop-up-frame {
     overflow-y: auto;
     padding: 0;
-    background: #c00;
+    background: #0C4DA2;
 }
 
 .close-popup {
@@ -31511,7 +31512,7 @@ ul.box-tmp li.is-on {
 }
 
 .popup-content {
-    background: #c00;
+    background: #0C4DA2;
     box-sizing: border-box;
     color: #fff;
     display: inline-block;
@@ -31640,7 +31641,7 @@ ul.box-tmp li.is-on {
 
 .popup-body > a {
     width: 185px;
-    background: #c00;
+    background: #0C4DA2;
     display: block;
     margin: 0 auto;
     color: #fff;
@@ -31713,7 +31714,7 @@ ul.box-tmp li.is-on {
 }
 
 .banner-bottom p span {
-    background: rgb(204, 0, 0) none repeat scroll 0 0;
+    background: rgb(0, 20, 204) none repeat scroll 0 0;
     border-radius: 33px;
     color: rgb(255, 255, 255);
     font-size: 14px;
@@ -31923,7 +31924,7 @@ ul.box-tmp li.is-on {
         margin-left: 6px !important;
     }
     .slideshow_paragraph > h2::after {
-        background: #c00;
+        background: #0C4DA2;
         height: 1px;
         width: 40px;
         content: "";
@@ -31952,8 +31953,8 @@ ul.box-tmp li.is-on {
         margin-bottom: 25px;
     }
     .slideshow_paragraph a {
-        background: rgb(204, 0, 0) none repeat scroll 0 0;
-        border: 2px solid rgb(204, 0, 0);
+        background: rgb(0, 20, 204) none repeat scroll 0 0;
+        border: 2px solid rgb(0, 20, 204);
         border-radius: 35px;
         box-sizing: border-box;
         color: rgb(255, 255, 255) !important;

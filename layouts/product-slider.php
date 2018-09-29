@@ -53,56 +53,7 @@
                 $th_2.css({ marginLeft: -posX_2 * wDiff_2 });
             }, 10);
 
-            // tab3
-
-            //var $bl_3 = $(".vehicles-tab-content:nth-child(3) .thumbs-block"),
-            //$th_3 = $(".vehicles-tab-content:nth-child(3) .thumbs-block .thumbs"),
-            //blW_3 = $bl_3.outerWidth(),
-            //blSW_3 = $bl_3[0].scrollWidth,
-            //wDiff_3 = (blSW_3 / blW_3) - 1,  // widths difference ratio
-            //mPadd_3 = 60,  // Mousemove Padding
-            //damp_3 = 20,  // Mousemove response softness
-            //mX_3 = 0,   // Real mouse position
-            //mX2_3 = 0,   // Modified mouse position
-            //posX_3 = 0,
-            //mmAA_3 = blW_3 - (mPadd_3 * 2), // The mousemove available area
-            //mmAAr_3 = (blW_3 / mmAA_3);    // get available mousemove fidderence ratio
-
-            //$bl_3.mousemove(function (e) {
-            //    mX_3 = e.pageX - this.offsetLeft;
-            //    mX2_3 = Math.min(Math.max(0, mX_3 - mPadd_3), mmAA_3) * mmAAr_3;
-            //});
-
-            //setInterval(function () {
-            //    posX_3 += (mX2_3 - posX_3) / damp_3; // zeno's paradox equation "catching delay"
-            //    $th_3.css({ marginLeft: -posX_3 * wDiff_3 });
-            //}, 10);
-
-            // tab4
-
-            //var $bl_4 = $(".vehicles-tab-content:nth-child(4) .thumbs-block"),
-            //$th_4 = $(".vehicles-tab-content:nth-child(4) .thumbs-block .thumbs"),
-            //blW_4 = $bl_4.outerWidth(),
-            //blSW_4 = $bl_4[0].scrollWidth,
-            //wDiff_4 = (blSW_4 / blW_4) - 1,  // widths difference ratio
-            //mPadd_4 = 60,  // Mousemove Padding
-            //damp_4 = 20,  // Mousemove response softness
-            //mX_4 = 0,   // Real mouse position
-            //mX2_4 = 0,   // Modified mouse position
-            //posX_4 = 0,
-            //mmAA_4 = blW_4 - (mPadd_4 * 2), // The mousemove available area
-            //mmAAr_4 = (blW_4 / mmAA_4);    // get available mousemove fidderence ratio
-
-            //$bl_4.mousemove(function (e) {
-            //    mX_4 = e.pageX - this.offsetLeft;
-            //    mX2_4 = Math.min(Math.max(0, mX_4 - mPadd_4), mmAA_4) * mmAAr_4;
-            //});
-
-            //setInterval(function () {
-            //    posX_4 += (mX2_4 - posX_4) / damp_4; // zeno's paradox equation "catching delay"
-            //    $th_4.css({ marginLeft: -posX_4 * wDiff_4 });
-            //}, 10);
-
+            
             $("ul.vehicles-tab-itmes li").click(function () {
                 var inx = $(this).index() + 1;
                 $("ul.vehicles-tab-itmes li").removeClass("itm_active");
@@ -178,22 +129,26 @@
 
             <div class="thumbs-block">
                 <div class="thumbs" style="margin-left: -93.4724px;">
+                <?php
+                 $resultarticle = $db->select("content","`type` = 'product'");
+                  foreach($resultarticle as $rows) {
+                 ?>
                     <div class="fancybox thumb slide-in-vhc">
-                        <a href="/toyota-products/agentType/View/PropertyID/3">
-                            <img alt="یاریس هاچ بک" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/yaris-side.png" width="258" height="110">
-                            <img alt="یاریس هاچ بک" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/yaris-front.png" width="258" height="110"></a>
+                        <a href="product-single.php?id=<?php echo $rows['id']; ?>">
+                            <img alt="یاریس هاچ بک" class="vhc-img" src="adminpanel/uploads/product/<?php echo $rows['image']; ?>" width="258" height="110">
+                            <img alt="یاریس هاچ بک" class="vhc-img-hover" src="adminpanel/uploads/product/<?php echo $rows['images']; ?>" width="258" height="110"></a>
 
-                        <h3>Yaris Hatchback</h3>
+                        <h3><?php echo $rows['title']; ?></h3>
 
-                        <h4><span>حجم موتور: cc 1500</span><span>نوع سوخت: بنزینی</span></h4>
+                        <h4><span><?php echo $rows['description']; ?></span><span>نوع سوخت: بنزینی</span></h4>
 
                         <h5><a href="/toyota-products/agentType/View/PropertyID/3">مشاهده</a><a href="/online-sales">خرید آنلاین</a></h5>
                     </div>
-
+                  <?php }; ?>
                     <div class="fancybox thumb slide-in-vhc">
                         <a href="/toyota-products/agentType/View/PropertyID/4">
-                            <img alt="یاریس" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/Yaris-Sedan-side-1.png" width="258" height="110">
-                            <img alt="یاریس" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/Yaris-Sedan-front-1.png" width="258" height="110"></a>
+                            <img alt="یاریس" class="vhc-img" src="adminpanel/uploads/product/Yaris-Sedan-side-1.png" width="258" height="110">
+                            <img alt="یاریس" class="vhc-img-hover" src="adminpanel/uploads/product/Yaris-Sedan-front-1.png" width="258" height="110"></a>
 
                         <h3>Yaris</h3>
 
@@ -204,8 +159,8 @@
 
                     <div class="fancybox thumb slide-in-vhc">
                         <a href="/toyota-products/agentType/View/PropertyID/1">
-                            <img alt="کرولا" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/corolla-side.png" width="258" height="110">
-                            <img alt="کرولا" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/corolla-front.png" width="258" height="110"></a>
+                            <img alt="کرولا" class="vhc-img" src="adminpanel/uploads/product/corolla-side.png" width="258" height="110">
+                            <img alt="کرولا" class="vhc-img-hover" src="adminpanel/uploads/product/corolla-front.png" width="258" height="110"></a>
 
                         <h3>Corolla</h3>
 
@@ -216,8 +171,8 @@
 
                     <div class="fancybox thumb slide-in-vhc">
                         <a href="/toyota-products/agentType/View/PropertyID/2">
-                            <img alt="کمری" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/camry-side.png" width="258" height="110">
-                            <img alt="کمری" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/camry-front.png" width="258" height="110"></a>
+                            <img alt="کمری" class="vhc-img" src="adminpanel/uploads/product/camry-side.png" width="258" height="110">
+                            <img alt="کمری" class="vhc-img-hover" src="adminpanel/uploads/product/camry-front.png" width="258" height="110"></a>
 
                         <h3>Camry</h3>
 
@@ -228,8 +183,8 @@
 
                     <div class="fancybox thumb slide-in-vhc">
                         <a href="/toyota-products/agentType/View/PropertyID/109">
-                            <img alt="آریون" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/Aurion-side-1.png" width="258" height="110">
-                            <img alt="آریون" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/Aurion-front-1.png" width="258" height="110"></a>
+                            <img alt="آریون" class="vhc-img" src="adminpanel/uploads/product/Aurion-side-1.png" width="258" height="110">
+                            <img alt="آریون" class="vhc-img-hover" src="adminpanel/uploads/product/Aurion-front-1.png" width="258" height="110"></a>
 
                         <h3>Aurion</h3>
 
@@ -240,8 +195,8 @@
 
                     <div class="fancybox thumb slide-in-vhc">
                         <a href="/toyota-products/agentType/View/PropertyID/6">
-                            <img alt="تویوتا 86" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/86-side-1.png" width="258" height="110">
-                            <img alt="تویوتا 86" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/86-front-1.png" width="258" height="110"></a>
+                            <img alt="تویوتا 86" class="vhc-img" src="adminpanel/uploads/product/86-side-1.png" width="258" height="110">
+                            <img alt="تویوتا 86" class="vhc-img-hover" src="adminpanel/uploads/product/86-front-1.png" width="258" height="110"></a>
 
                         <h3>86</h3>
 
@@ -260,8 +215,8 @@
                 <div class="thumbs" style="margin-left: 0px;">
                     <div class="fancybox thumb">
                         <a href="/Toyota-C-HR">
-                            <img alt="C-HR" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/c-hr-side.png" width="258" height="110">
-                            <img alt="C-HR" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/c-hr-front.png" width="258" height="110"> </a>
+                            <img alt="C-HR" class="vhc-img" src="adminpanel/uploads/product/c-hr-side.png" width="258" height="110">
+                            <img alt="C-HR" class="vhc-img-hover" src="adminpanel/uploads/product/c-hr-front.png" width="258" height="110"> </a>
 
                         <h3>C-HR</h3>
 
@@ -272,8 +227,8 @@
 
                     <div class="fancybox thumb">
                         <a href="/toyota-products/agentType/View/PropertyID/10">
-                            <img alt="روفور" class="vhc-img" src="_Content/images/HomePage/Vehicles-Section/rav4-side.png" width="258" height="110">
-                            <img alt="روفور" class="vhc-img-hover" src="_Content/images/HomePage/Vehicles-Section/rav4-front.png" width="258" height="110"></a>
+                            <img alt="روفور" class="vhc-img" src="adminpanel/uploads/product/rav4-side.png" width="258" height="110">
+                            <img alt="روفور" class="vhc-img-hover" src="adminpanel/uploads/product/rav4-front.png" width="258" height="110"></a>
 
                         <h3>Rav4</h3>
 
